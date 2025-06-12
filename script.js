@@ -33,7 +33,6 @@ const checkWeather = async (city) => {
     try {
         const response = await fetch(url);
         const weather_data = await response.json();
-        console.log(weather_data);
 
         if (weather_data.cod !== 200) {
             alert("City not found. Please enter a valid city.");
